@@ -1,0 +1,36 @@
+{
+  "name": "TarkovHacks.net",
+  "short_name": "Tarkov Hacks",
+  "description": "Escape From Tarkov Cheats with ESP, aimbot, loot ESP, and extraction tracking.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060409",
+  "theme_color": "#a855f7",
+  "icons": [
+    {
+      "src": "/favicon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
