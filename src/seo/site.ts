@@ -14,8 +14,8 @@ export const VIDEO_DEMO =
   'https://bryjchknhsrmjdunnfer.supabase.co/storage/v1/object/public/575/0510(3).mp4';
 
 export const TARKOV_SCREENSHOTS = [
-  `${SITE_URL}/eft-screenshot-1.webp`,
-  `${SITE_URL}/eft-screenshot-2.webp`,
+  '/eft-screenshot-1.webp',
+  '/eft-screenshot-2.webp',
   'https://zadeyo.com/whsatano/ancient_eft_s1-12532c5e0f92.webp',
   'https://zadeyo.com/whsatano/ancient_eft_s2-0fa3b4b7f6da.webp',
 ] as const;
