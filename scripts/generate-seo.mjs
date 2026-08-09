@@ -6,7 +6,7 @@ const INDEXNOW_KEY = '7f3c9a2e-1b4d-4e8f-9c6a-2d5e8f1a3b7c';
 const today = new Date().toISOString().slice(0, 10);
 const root = resolve(process.cwd());
 const publicDir = resolve(root, 'public');
-const blogPostsPath = resolve(root, 'src/seo/blog-posts.ts');
+const blogPostsPath = resolve(root, 'src/seo/blog-meta.ts');
 const blogSource = readFileSync(blogPostsPath, 'utf8');
 
 const blogEntries = [...blogSource.matchAll(

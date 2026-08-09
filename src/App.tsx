@@ -3,7 +3,8 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/Home';
 import { PrivacyPage } from './pages/Privacy';
-import { BLOG_POSTS, BlogListPage, BlogPostPage } from './pages/Blog';
+import { BlogListPage, BlogPostPage } from './pages/Blog';
+import { BLOG_POSTS_META } from './seo/blog-meta';
 import { I18nProvider } from './i18n';
 import { DEFAULT_OG_IMAGE, Seo } from './components/Seo';
 import { SmoothScroll } from './components/SmoothScroll';
@@ -52,16 +53,17 @@ function RouteSeo() {
 
   if (currentPath.startsWith('/blog/')) {
     const slug = currentPath.replace('/blog/', '');
-    const post = BLOG_POSTS.find(entry => entry.slug === slug);
+    const post = BLOG_POSTS_META.find(entry => entry.slug === slug);
     if (post) {
       const canonicalPath = `/blog/${post.slug}`;
       const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+      const imageUrl = post.image.startsWith('http') ? post.image : `${SITE_URL}${post.image}`;
       return (
         <Seo
           title={`${post.title} | TarkovHacks.net`}
           description={post.excerpt}
           path={canonicalPath}
-          image={post.image}
+          image={imageUrl}
           type="article"
           structuredData={{
             '@context': 'https://schema.org',
@@ -78,7 +80,7 @@ function RouteSeo() {
                   logo: { '@type': 'ImageObject', url: LOGO_URL_LOCAL },
                 },
                 url: canonicalUrl,
-                image: post.image || DEFAULT_OG_IMAGE,
+                image: imageUrl || DEFAULT_OG_IMAGE,
                 mainEntityOfPage: canonicalUrl,
               },
               {
@@ -164,7 +166,7 @@ function RouteSeo() {
               { '@type': 'ListItem', position: 1, name: 'Home', url: `${SITE_URL}/` },
               { '@type': 'ListItem', position: 2, name: 'Blog', url: `${SITE_URL}/blog` },
               { '@type': 'ListItem', position: 3, name: 'Privacy', url: `${SITE_URL}/privacy` },
-              ...BLOG_POSTS.map((post, index) => ({
+              ...BLOG_POSTS_META.map((post, index) => ({
                 '@type': 'ListItem',
                 position: index + 4,
                 name: post.title,

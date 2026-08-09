@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://tarkovhacks.net';
 export const SITE_NAME = 'TarkovHacks.net';
-export const SITE_SHORT_NAME = 'Escape From Tarkov Hacks';
+export const SITE_SHORT_NAME = 'Escape From Tarkov Cheats';
 export const GAME_NAME = 'ESCAPE FROM TARKOV';
 export const BUY_URL = 'https://zadeyo.com/go/RUSHBA?to=%2Fproducts%2Fescape-from-tarkov';
 export const LOGO_URL = '/logo.png';

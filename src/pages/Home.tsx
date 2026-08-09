@@ -7,7 +7,7 @@ import { SupportBanner } from '../components/SupportBanner';
 import { VideoShowcase } from '../components/VideoShowcase';
 import { PricingFaqSection } from '../components/PricingFaqSection';
 import { SeoContentSection } from '../components/SeoContentSection';
-import { DiscordSupport } from '../components/DiscordSupport';
+import { PurchaseSupport } from '../components/PurchaseSupport';
 
 export function HomePage() {
   return (
@@ -21,7 +21,7 @@ export function HomePage() {
       <VideoShowcase />
       <PricingFaqSection />
       <SeoContentSection />
-      <DiscordSupport />
+      <PurchaseSupport />
     </>
   );
 }
