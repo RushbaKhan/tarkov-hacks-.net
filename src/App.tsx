@@ -38,7 +38,7 @@ function RouteSeo() {
   if (currentPath === '/blog') {
     return (
       <Seo
-        title="Escape From Tarkov Cheats Blog – ESP, Aimbot & Loot Guides"
+        title="Escape From Tarkov Hacks Blog – ESP, Aimbot & Loot Guides"
         description="Expert guides on EFT ESP, player and loot tracking, aimbot setup, no recoil, BattlEye compatibility, and Tarkov cheat updates."
         path="/blog"
         type="website"
@@ -165,7 +165,7 @@ function RouteSeo() {
             logo: LOGO_URL_LOCAL,
             sameAs: [BUY_URL],
           },
-          buildProductSchema('Escape From Tarkov Cheats', HOME_DESCRIPTION),
+          buildProductSchema('Escape From Tarkov Hacks', HOME_DESCRIPTION),
           {
             '@type': 'ItemList',
             name: 'TarkovHacks.net Site Pages',

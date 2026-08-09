@@ -72,7 +72,7 @@ export function Seo({
     upsertMeta('meta[property="og:image:height"]', { property: 'og:image:height', content: '630' });
     upsertMeta('meta[property="og:image:alt"]', {
       property: 'og:image:alt',
-      content: 'TarkovHacks.net logo — Escape From Tarkov Cheats',
+      content: 'TarkovHacks.net logo — Escape From Tarkov Hacks',
     });
     upsertMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: SITE_NAME });
     upsertMeta('meta[property="og:locale"]', { property: 'og:locale', content: 'en_US' });

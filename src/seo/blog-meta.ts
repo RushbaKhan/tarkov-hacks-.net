@@ -22,7 +22,7 @@ const BLOG_IMAGES = [
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     slug: `escape-from-tarkov-cheats-esp-aimbot`,
-    title: `Escape From Tarkov Cheats – ESP and Aimbot Features Explained`,
+    title: `Escape From Tarkov Hacks – ESP and Aimbot Features Explained`,
     category: `Guide`,
     date: `August 1, 2026`,
     readTime: `11 min read`,
@@ -62,7 +62,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: `battleye-streamproof-tarkov-cheats`,
-    title: `BattlEye and Stream-Proof Tarkov Cheats – Stay Safe While Streaming`,
+    title: `BattlEye and Stream-Proof Tarkov Hacks – Stay Safe While Streaming`,
     category: `Guide`,
     date: `August 5, 2026`,
     readTime: `10 min read`,

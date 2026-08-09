@@ -27,7 +27,7 @@ export function PurchaseSupport() {
               lineHeight: 1.25,
               marginBottom: '10px',
             }}>
-              Get Escape From Tarkov Cheats — instant delivery from $35.
+              Get Escape From Tarkov Hacks — instant delivery from $35.
             </h2>
             <p style={{
               fontFamily: 'var(--font-body)',

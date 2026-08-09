@@ -27,7 +27,7 @@ export function BrandName({ size = 'nav' }: BrandNameProps) {
       }}>
         Escape From Tarkov
       </span>
-      <span style={{ color: '#ffffff' }}>Cheats</span>
+      <span style={{ color: '#ffffff' }}>Hacks</span>
     </span>
   );
 }

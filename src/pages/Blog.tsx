@@ -117,7 +117,7 @@ export function BlogListPage() {
             marginBottom: '16px',
           }}>
             Escape From Tarkov{' '}
-            <span className="gradient-text">Cheats Blog</span>
+            <span className="gradient-text">Hacks Blog</span>
           </h1>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -198,7 +198,7 @@ export function BlogListPage() {
               ))}
               <li>
                 <a href={BUY_URL} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', color: 'var(--accent)', textDecoration: 'none' }}>
-                  Get Escape From Tarkov Cheats →
+                  Get Escape From Tarkov Hacks →
                 </a>
               </li>
             </ul>
@@ -450,7 +450,7 @@ export function BlogPostPage() {
               fontWeight: 700,
               color: 'var(--text-primary)',
               marginBottom: '8px',
-            }}>Get Escape From Tarkov Cheats</h2>
+            }}>Get Escape From Tarkov Hacks</h2>
             <p style={{
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
@@ -458,7 +458,7 @@ export function BlogPostPage() {
               marginBottom: '20px',
             }}>EFT ESP, aimbot, loot ESP, extraction tracking, and no recoil. Updated after every patch.</p>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY CHEATS
+              BUY HACKS
             </a>
           </div>
 

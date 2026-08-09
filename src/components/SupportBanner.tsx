@@ -45,7 +45,7 @@ export function SupportBanner() {
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY CHEATS
+              BUY HACKS
             </a>
           </div>
         </div>

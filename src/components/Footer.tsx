@@ -79,7 +79,7 @@ export function Footer() {
               onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--text-secondary)'; }}
               onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--text-muted)'; }}
             >
-              BUY CHEATS
+              BUY HACKS
             </a>
           </nav>
         </div>

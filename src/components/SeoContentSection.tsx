@@ -4,7 +4,7 @@ import { BUY_URL } from '../seo/site';
 
 const CONTENT_BLOCKS = [
   {
-    title: 'What Are Escape From Tarkov Cheats?',
+    title: 'What Are Escape From Tarkov Hacks?',
     body: `Escape From Tarkov cheats are external tools built for EFT raids on Windows. Our package combines player ESP with skeleton overlay, loot ESP, extraction point ESP, Scav and PMC identification, aimbot with distance limits, no recoil, container ESP, quest item highlighting, stream-proof mode, and optional CLOUD-DMA on AWS. Whether you run solo PMC raids or squad extracts, EFT cheats give you the information to survive longer, find valuable loot faster, and extract safely without guessing where threats are hiding.`,
   },
   {
@@ -53,7 +53,7 @@ export function SeoContentSection() {
               letterSpacing: '-0.02em',
             }}
           >
-            Escape From Tarkov Cheats — ESP, Aimbot &amp; Wallhack Explained
+            Escape From Tarkov Hacks — ESP, Aimbot &amp; Wallhack Explained
           </h2>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -113,7 +113,7 @@ export function SeoContentSection() {
               {' '}with instant delivery and 24/7 support.
             </p>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY CHEATS
+              BUY HACKS
             </a>
           </div>
         </div>

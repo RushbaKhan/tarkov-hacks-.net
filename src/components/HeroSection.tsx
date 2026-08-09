@@ -103,7 +103,7 @@ export function HeroSection() {
           maxWidth: '900px',
         }}>
           <span className="gradient-text" style={{ display: 'block' }}>
-            Escape From Tarkov Cheats
+            Escape From Tarkov Hacks
           </span>
           <span style={{
             display: 'block',
@@ -132,7 +132,7 @@ export function HeroSection() {
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: 'clamp(24px, 3vw, 32px)' }}>
           <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-            BUY CHEATS
+            BUY HACKS
           </a>
           <a href="#pricing" className="btn-ghost">
             See pricing &amp; features

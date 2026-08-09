@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://tarkovhacks.net';
 export const SITE_NAME = 'TarkovHacks.net';
-export const SITE_SHORT_NAME = 'Escape From Tarkov Cheats';
+export const SITE_SHORT_NAME = 'Escape From Tarkov Hacks';
 export const GAME_NAME = 'ESCAPE FROM TARKOV';
 export const BUY_URL = 'https://zadeyo.com/go/RUSHBA?to=%2Fproducts%2Fescape-from-tarkov';
 export const LOGO_URL = '/logo.png';
@@ -14,16 +14,16 @@ export const VIDEO_DEMO = '/eft-demo-compressed.mp4';
 
 export { TARKOV_SCREENSHOTS } from './screenshots';
 export const PRIMARY_KEYWORDS = [
-  'Escape From Tarkov Cheats',
+  'Escape From Tarkov Hacks',
   'Escape From Tarkov Cheat',
   'Escape From Tarkov Hacks',
   'Escape From Tarkov ESP',
   'Escape From Tarkov Aimbot',
   'Escape From Tarkov Wallhack',
-  'EFT Cheats',
+  'EFT Hacks',
   'EFT ESP',
   'EFT Aimbot',
-  'Tarkov Cheats',
+  'Tarkov Hacks',
   'Tarkov ESP',
   'Tarkov Aimbot',
   'Tarkov Hacks',

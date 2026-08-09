@@ -43,7 +43,7 @@ export function PrivacyPage() {
             },
             {
               title: 'Cookies & Analytics',
-              body: 'The site may use essential cookies for basic functionality. We do not sell personal data. Third-party analytics or payment processors linked from BUY CHEATS buttons operate under their own privacy terms when you leave this website.',
+              body: 'The site may use essential cookies for basic functionality. We do not sell personal data. Third-party analytics or payment processors linked from BUY HACKS buttons operate under their own privacy terms when you leave this website.',
             },
             {
               title: 'External Links',
