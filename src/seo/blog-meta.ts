@@ -33,7 +33,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
   },
   {
     slug: `eft-aimbot-no-recoil-guide`,
-    title: `EFT Aimbot and No Recoil – Tarkov Cheat Features Explained`,
+    title: `Escape From Tarkov Aimbot and No Recoil – Tarkov Cheat Features Explained`,
     category: `Aimbot`,
     date: `July 25, 2026`,
     readTime: `11 min read`,

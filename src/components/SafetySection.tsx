@@ -98,8 +98,10 @@ export function SafetySection() {
               aspectRatio: '16/9',
             }}>
               <img
-                src="/eft-screenshot-2.webp"
-                alt="Escape From Tarkov loot ESP and player overlay in raid"
+                src="/screenshots/chams-pvp.webp"
+                alt="Escape From Tarkov player ESP with skeleton overlay in PvP raid"
+                width={960}
+                height={540}
                 loading="lazy"
                 decoding="async"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}

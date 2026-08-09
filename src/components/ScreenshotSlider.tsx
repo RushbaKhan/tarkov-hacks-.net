@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import { TARKOV_SCREENSHOTS } from '../seo/site';
 
+const SLIDER_ALTS = [
+  'Escape From Tarkov skeleton ESP showing player pose through walls in Labs',
+  'Escape From Tarkov player ESP with boxes, health and distance overlays',
+  'Escape From Tarkov wallhack showing PMC positions and loot in raid',
+  'Escape From Tarkov raid overview with extraction and map awareness',
+  'Escape From Tarkov cheat HUD with player tracking overlays',
+  'Escape From Tarkov loot ESP highlighting valuable items in raid',
+] as const;
+
 interface ScreenshotSliderProps {
   interval?: number;
   style?: React.CSSProperties;
@@ -27,11 +36,9 @@ export function ScreenshotSlider({ interval = 3500, style, imgStyle }: Screensho
         <img
           key={src}
           src={src}
-          alt={
-            i % 2 === 0
-              ? 'Escape From Tarkov ESP interface showing player and loot overlays'
-              : 'Escape From Tarkov player ESP with raid HUD elements'
-          }
+          alt={SLIDER_ALTS[i] ?? 'Escape From Tarkov cheat screenshot'}
+          width={1280}
+          height={720}
           loading={i === 0 ? 'eager' : 'lazy'}
           decoding="async"
           style={{

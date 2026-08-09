@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
+import { HOME_TITLE, HOME_DESCRIPTION } from './seo/constants';
 
 export interface Language {
   code: string;
@@ -36,8 +37,8 @@ const translations: Record<string, Record<string, string>> = {
     'hero.cta': 'Get Cheats',
     'hero.features': 'See Features',
     'hero.trust': 'Windows 10 & 11 · BattlEye Undetected · Stream-Proof · Cloud-DMA Available',
-    'meta.title': 'EFT Cheats – Undetected Aimbot, ESP & Triggerbot | tarkovhacks.net',
-    'meta.description': 'EFT cheats with undetected aimbot, ESP, triggerbot, wallhack and radar. Stream-proof, updated every patch.',
+    'meta.title': HOME_TITLE,
+    'meta.description': HOME_DESCRIPTION,
   },
   de: {
     'nav.home': 'Startseite',
@@ -269,7 +270,6 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     stripLangQueryFromUrl();
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    updateMetaTags(lang);
   }, []);
 
   const t = (key: string): string => {
@@ -288,9 +288,11 @@ export function useI18n() {
 }
 
 function updateMetaTags(lang: string) {
+  if (window.location.pathname !== '/') return;
+
   const t = translations[lang] || translations.en;
-  const title = t['meta.title'] || translations.en['meta.title'];
-  const description = t['meta.description'] || translations.en['meta.description'];
+  const title = t['meta.title'] || HOME_TITLE;
+  const description = t['meta.description'] || HOME_DESCRIPTION;
   document.title = title;
   const descMeta = document.querySelector('meta[name="description"]');
   if (descMeta) descMeta.setAttribute('content', description);

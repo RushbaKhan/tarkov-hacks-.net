@@ -9,14 +9,18 @@ export const FAVICON_URL = `${SITE_URL}/favicon.ico`;
 export const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 export const INDEXNOW_KEY = '7f3c9a2e-1b4d-4e8f-9c6a-2d5e8f1a3b7c';
 export const VIDEO_HERO = '/eft-hero-demo-compressed.mp4';
-export const VIDEO_HERO_POSTER = '/eft-screenshot-1.webp';
+export const VIDEO_HERO_POSTER = '/screenshots/slider-1.webp';
 export const VIDEO_DEMO =
   'https://bryjchknhsrmjdunnfer.supabase.co/storage/v1/object/public/575/0510(3).mp4';
-export const VIDEO_DEMO_POSTER = '/eft-screenshot-2.webp';
+export const VIDEO_DEMO_POSTER = '/screenshots/slider-2.webp';
 
 export const TARKOV_SCREENSHOTS = [
-  '/eft-screenshot-1.webp',
-  '/eft-screenshot-2.webp',
+  '/screenshots/slider-1.webp',
+  '/screenshots/slider-2.webp',
+  '/screenshots/slider-3.webp',
+  '/screenshots/slider-4.webp',
+  '/screenshots/slider-5.webp',
+  '/screenshots/slider-6.webp',
 ] as const;
 export const PRIMARY_KEYWORDS = [
   'Escape From Tarkov Cheats',
