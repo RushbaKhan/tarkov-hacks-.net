@@ -57,7 +57,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `August 5, 2026`,
     readTime: `10 min read`,
-    image: `/blog/battleye-streamproof.webp`,
+    image: `/blog/chams-pvp-thumb.webp`,
     excerpt:
       `How BattlEye works with Escape From Tarkov cheats, stream-proof overlay modes, screenshot protection, and realistic expectations after EFT patches.`,
   },
@@ -77,7 +77,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `July 30, 2026`,
     readTime: `10 min read`,
-    image: `/blog/extraction-esp.webp`,
+    image: `/blog/skeleton-labs-thumb.webp`,
     excerpt:
       `Extraction point ESP for Escape From Tarkov — conditional exits, co-op extracts, payment fees, and map-specific routing on Shoreline and Lighthouse.`,
   },
@@ -87,7 +87,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `July 18, 2026`,
     readTime: `8 min read`,
-    image: `/blog/windows-loader.webp`,
+    image: `/blog/esp-menu-thumb.webp`,
     excerpt:
       `Step-by-step Windows loader setup for Escape From Tarkov cheats — download, BattlEye compatibility checks, overlay hotkeys, and post-patch updates.`,
   }

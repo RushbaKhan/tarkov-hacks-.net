@@ -17,8 +17,6 @@ export const VIDEO_DEMO_POSTER = '/screenshots/slider-2.webp';
 export const TARKOV_SCREENSHOTS = [
   '/screenshots/slider-1.webp',
   '/screenshots/slider-2.webp',
-  '/screenshots/slider-3.webp',
-  '/screenshots/slider-4.webp',
   '/screenshots/slider-5.webp',
   '/screenshots/slider-6.webp',
 ] as const;

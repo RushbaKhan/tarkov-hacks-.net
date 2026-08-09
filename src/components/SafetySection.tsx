@@ -1,6 +1,6 @@
 import { AnimatedSection } from './AnimatedSection';
 import { VideoEmbed } from './VideoEmbed';
-import { VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
+import { VIDEO_DEMO, VIDEO_DEMO_POSTER, VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
 
 export function SafetySection() {
   return (
@@ -96,15 +96,14 @@ export function SafetySection() {
               border: '1px solid var(--border-ghost)',
               overflow: 'hidden',
               aspectRatio: '16/9',
+              position: 'relative',
+              background: 'var(--bg-void)',
             }}>
-              <img
-                src="/screenshots/chams-pvp.webp"
-                alt="Escape From Tarkov player ESP with skeleton overlay in PvP raid"
-                width={960}
-                height={540}
-                loading="lazy"
-                decoding="async"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              <VideoEmbed
+                src={VIDEO_DEMO}
+                poster={VIDEO_DEMO_POSTER}
+                ariaLabel="Escape From Tarkov cheat overlay and feature demonstration"
+                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>

@@ -1,9 +1,8 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/Home';
-import { PrivacyPage } from './pages/Privacy';
-import { BlogListPage, BlogPostPage } from './pages/Blog';
 import { BLOG_POSTS_META } from './seo/blog-meta';
 import { I18nProvider } from './i18n';
 import { DEFAULT_OG_IMAGE, Seo } from './components/Seo';
@@ -12,6 +11,14 @@ import { HOME_TITLE, HOME_DESCRIPTION } from './seo/constants';
 import { HOME_FAQ, BUY_URL, LOGO_URL_LOCAL, SITE_NAME, SITE_URL } from './seo/site';
 import { buildProductSchema } from './seo/product-schema';
 import './globals.css';
+
+const PrivacyPage = lazy(() => import('./pages/Privacy').then(m => ({ default: m.PrivacyPage })));
+const BlogListPage = lazy(() => import('./pages/Blog').then(m => ({ default: m.BlogListPage })));
+const BlogPostPage = lazy(() => import('./pages/Blog').then(m => ({ default: m.BlogPostPage })));
+
+function PageFallback() {
+  return <div style={{ minHeight: '40vh', background: 'var(--bg-void)' }} aria-hidden="true" />;
+}
 
 function toIsoDate(date: string) {
   const parsed = new Date(date);
@@ -193,9 +200,9 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/blog" element={<BlogListPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/blog" element={<Suspense fallback={<PageFallback />}><BlogListPage /></Suspense>} />
+          <Route path="/blog/:slug" element={<Suspense fallback={<PageFallback />}><BlogPostPage /></Suspense>} />
+          <Route path="/privacy" element={<Suspense fallback={<PageFallback />}><PrivacyPage /></Suspense>} />
         </Routes>
         <Footer />
       </I18nProvider>
