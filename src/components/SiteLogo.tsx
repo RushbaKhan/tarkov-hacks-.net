@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { LOGO_URL, SITE_NAME } from '../seo/site';
+import { SITE_NAME } from '../seo/site';
 
 type SiteLogoProps = {
   size?: number;
@@ -11,7 +11,7 @@ type SiteLogoProps = {
 export function SiteLogo({ size = 32, className, style, loading = 'lazy' }: SiteLogoProps) {
   return (
     <img
-      src={LOGO_URL}
+      src="/logo.webp"
       alt={`${SITE_NAME} logo`}
       width={size}
       height={size}
@@ -22,6 +22,7 @@ export function SiteLogo({ size = 32, className, style, loading = 'lazy' }: Site
         display: 'block',
         objectFit: 'contain',
         flexShrink: 0,
+        background: 'transparent',
         ...style,
       }}
     />

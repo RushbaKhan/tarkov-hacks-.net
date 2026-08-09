@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { AnimatedSection } from './AnimatedSection';
-import { ScreenshotSlider } from './ScreenshotSlider';
 
 const espFeatures = [
   { name: 'Player ESP with skeleton overlay', desc: 'See PMCs and Scavs through walls with bone structure, distance tags, and health bars for every engagement.', icon: (<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>) },
@@ -253,11 +252,24 @@ export function FeaturesGrid() {
               overflow: 'hidden',
               border: '1px solid var(--border-ghost)',
               aspectRatio: '16/9',
+              position: 'relative',
+              background: 'var(--bg-void)',
             }}>
-              <ScreenshotSlider
-                interval={4000}
-                style={{ width: '100%', height: '100%' }}
+              <img
+                src="/screenshots/in-game-esp-dark.webp"
+                alt="Escape From Tarkov cheat ESP menu with player and loot overlays in raid"
+                width={960}
+                height={540}
+                loading="lazy"
+                decoding="async"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to bottom, rgba(6,4,9,0.15) 0%, rgba(6,4,9,0.55) 100%)',
+                pointerEvents: 'none',
+              }} />
             </div>
           </AnimatedSection>
         </div>
