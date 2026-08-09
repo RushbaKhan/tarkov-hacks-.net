@@ -1,6 +1,6 @@
 import { AnimatedSection } from './AnimatedSection';
 import { VideoEmbed } from './VideoEmbed';
-import { VIDEO_DEMO, VIDEO_DEMO_POSTER, VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
+import { VIDEO_DEMO, VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
 
 export function SafetySection() {
   return (
@@ -101,7 +101,6 @@ export function SafetySection() {
             }}>
               <VideoEmbed
                 src={VIDEO_DEMO}
-                poster={VIDEO_DEMO_POSTER}
                 ariaLabel="Escape From Tarkov cheat overlay and feature demonstration"
                 style={{ width: '100%', height: '100%' }}
               />

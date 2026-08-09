@@ -12,7 +12,6 @@ export const VIDEO_HERO = '/eft-hero-demo-compressed.mp4';
 export const VIDEO_HERO_POSTER = '/screenshots/ancient-eft-s1.webp';
 export const VIDEO_DEMO =
   'https://bryjchknhsrmjdunnfer.supabase.co/storage/v1/object/public/575/0510(3).mp4';
-export const VIDEO_DEMO_POSTER = '/screenshots/ancient-eft-s2.webp';
 
 export { TARKOV_SCREENSHOTS } from './screenshots';
 export const PRIMARY_KEYWORDS = [

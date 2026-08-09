@@ -66,21 +66,13 @@ export function VideoEmbed({ src, poster, className, style, priority = false, ar
           loop
           muted
           playsInline
-          preload="none"
-          poster={poster}
+          preload="metadata"
+          {...(poster ? { poster } : {})}
           aria-label={ariaLabel}
-          style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+          style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', background: 'var(--bg-void)' }}
         />
       ) : (
-        poster ? (
-          <img
-            src={poster}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-          />
-        ) : null
+        <div style={{ width: '100%', height: '100%', background: 'var(--bg-void)' }} aria-hidden="true" />
       )}
     </div>
   );
