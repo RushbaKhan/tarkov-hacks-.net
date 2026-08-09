@@ -10,6 +10,15 @@ export type BlogPostMeta = {
 
 export const BLOG_CATEGORIES = ['All', 'ESP', 'Aimbot', 'Guide', 'Loot'] as const;
 
+const BLOG_IMAGES = [
+  '/screenshots/eft-hd-01.webp',
+  '/screenshots/eft-hd-02.webp',
+  '/screenshots/eft-hd-03.webp',
+  '/screenshots/eft-hd-04.webp',
+  '/screenshots/eft-hd-05.webp',
+  '/screenshots/eft-hd-06.webp',
+] as const;
+
 export const BLOG_POSTS_META: BlogPostMeta[] = [
   {
     slug: `escape-from-tarkov-cheats-esp-aimbot`,
@@ -17,7 +26,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `August 1, 2026`,
     readTime: `11 min read`,
-    image: `/screenshots/ancient-eft-s1.webp`,
+    image: BLOG_IMAGES[0],
     excerpt:
       `A complete guide to Escape From Tarkov cheats — ESP overlays, Tarkov aimbot settings, no recoil, loot tracking, and what to expect when running EFT raids.`,
   },
@@ -27,7 +36,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `ESP`,
     date: `July 28, 2026`,
     readTime: `12 min read`,
-    image: `/screenshots/ancient-eft-s2.webp`,
+    image: BLOG_IMAGES[1],
     excerpt:
       `Learn how EFT ESP works in Tarkov raids — player wallhack, loot highlighting, extraction markers, Scav ID, and distance filters for Customs and Woods.`,
   },
@@ -37,7 +46,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Aimbot`,
     date: `July 25, 2026`,
     readTime: `11 min read`,
-    image: `/screenshots/ancient-eft-s1.webp`,
+    image: BLOG_IMAGES[2],
     excerpt:
       `Configure EFT aimbot and no recoil for Tarkov fights — FOV limits, bone selection, smoothing, visibility checks, and weapon recoil control for PMC runs.`,
   },
@@ -47,7 +56,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Loot`,
     date: `July 22, 2026`,
     readTime: `12 min read`,
-    image: `/screenshots/ancient-eft-s2.webp`,
+    image: BLOG_IMAGES[3],
     excerpt:
       `Find valuable loot faster with Escape From Tarkov loot ESP — container tracking, quest item highlights, key spawns, and routes for Interchange and Reserve.`,
   },
@@ -57,7 +66,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `August 5, 2026`,
     readTime: `10 min read`,
-    image: `/screenshots/ancient-eft-s1.webp`,
+    image: BLOG_IMAGES[4],
     excerpt:
       `How BattlEye works with Escape From Tarkov cheats, stream-proof overlay modes, screenshot protection, and realistic expectations after EFT patches.`,
   },
@@ -67,7 +76,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `ESP`,
     date: `August 3, 2026`,
     readTime: `9 min read`,
-    image: `/screenshots/ancient-eft-s2.webp`,
+    image: BLOG_IMAGES[5],
     excerpt:
       `Use player ESP and wallhack overlays on Customs — Dorms fights, construction pushes, spawn reads, and extract timing for profitable PMC runs.`,
   },
@@ -77,7 +86,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `July 30, 2026`,
     readTime: `10 min read`,
-    image: `/screenshots/ancient-eft-s1.webp`,
+    image: BLOG_IMAGES[0],
     excerpt:
       `Extraction point ESP for Escape From Tarkov — conditional exits, co-op extracts, payment fees, and map-specific routing on Shoreline and Lighthouse.`,
   },
@@ -87,7 +96,7 @@ export const BLOG_POSTS_META: BlogPostMeta[] = [
     category: `Guide`,
     date: `July 18, 2026`,
     readTime: `8 min read`,
-    image: `/screenshots/ancient-eft-s2.webp`,
+    image: BLOG_IMAGES[2],
     excerpt:
       `Step-by-step Windows loader setup for Escape From Tarkov cheats — download, BattlEye compatibility checks, overlay hotkeys, and post-patch updates.`,
   }

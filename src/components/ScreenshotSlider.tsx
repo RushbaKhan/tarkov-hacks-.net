@@ -1,10 +1,5 @@
-import { useState, useEffect } from 'react';
-import { TARKOV_SCREENSHOTS } from '../seo/screenshots';
-
-const SLIDER_ALTS: Record<string, string> = {
-  '/screenshots/ancient-eft-s1.webp': 'Escape From Tarkov chams and player ESP highlighting enemies in raid',
-  '/screenshots/ancient-eft-s2.webp': 'Escape From Tarkov wallhack with player boxes, loot ESP and radar overlay',
-};
+import { useState, useEffect, useCallback } from 'react';
+import { TARKOV_SCREENSHOTS, SCREENSHOT_ALTS } from '../seo/screenshots';
 
 interface ScreenshotSliderProps {
   interval?: number;
@@ -17,21 +12,31 @@ export function ScreenshotSlider({ interval = 4000, style, imgStyle }: Screensho
   const slides = TARKOV_SCREENSHOTS;
   const src = slides[active];
 
+  const preloadNext = useCallback((index: number) => {
+    const next = slides[(index + 1) % slides.length];
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.as = 'image';
+    link.href = next;
+    document.head.appendChild(link);
+  }, [slides]);
+
   useEffect(() => {
+    preloadNext(active);
     const id = setInterval(() => {
       setActive(cur => (cur + 1) % slides.length);
     }, interval);
     return () => clearInterval(id);
-  }, [interval, slides.length]);
+  }, [interval, slides.length, active, preloadNext]);
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden', background: 'var(--bg-void)', ...style }}>
       <img
         key={src}
         src={src}
-        alt={SLIDER_ALTS[src] ?? 'Escape From Tarkov cheat screenshot'}
-        width={800}
-        height={450}
+        alt={SCREENSHOT_ALTS[src] ?? 'Escape From Tarkov cheat screenshot'}
+        width={1280}
+        height={720}
         loading={active === 0 ? 'eager' : 'lazy'}
         fetchPriority={active === 0 ? 'high' : 'auto'}
         decoding="async"

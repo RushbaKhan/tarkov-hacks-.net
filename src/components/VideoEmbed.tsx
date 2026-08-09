@@ -1,45 +1,32 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect } from 'react';
 
 type VideoEmbedProps = {
   src: string;
   poster?: string;
   className?: string;
   style?: React.CSSProperties;
-  priority?: boolean;
+  /** Load and play immediately — no lazy gate */
+  eager?: boolean;
   ariaLabel?: string;
 };
 
-export function VideoEmbed({ src, poster, className, style, priority = false, ariaLabel }: VideoEmbedProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
+export function VideoEmbed({
+  src,
+  poster,
+  className,
+  style,
+  eager = false,
+  ariaLabel,
+}: VideoEmbedProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isVisible, setIsVisible] = useState(priority);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { rootMargin: '120px', threshold: 0.1 },
-    );
-
-    observer.observe(container);
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || !isVisible) return;
+    if (!video) return;
 
-    if (!isLoaded) {
-      video.src = src;
-      video.load();
-      setIsLoaded(true);
+    if (eager) {
+      void video.play().catch(() => undefined);
+      return;
     }
 
     const playObserver = new IntersectionObserver(
@@ -50,30 +37,36 @@ export function VideoEmbed({ src, poster, className, style, priority = false, ar
           video.pause();
         }
       },
-      { threshold: 0.25 },
+      { threshold: 0.15, rootMargin: '80px' },
     );
 
     playObserver.observe(video);
     return () => playObserver.disconnect();
-  }, [isVisible, isLoaded, src]);
+  }, [eager, src]);
 
   return (
-    <div ref={containerRef} style={{ width: '100%', height: '100%', background: 'var(--bg-void)', ...style }} className={className}>
-      {isVisible ? (
-        <video
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          {...(poster ? { poster } : {})}
-          aria-label={ariaLabel}
-          style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover', background: 'var(--bg-void)' }}
-        />
-      ) : (
-        <div style={{ width: '100%', height: '100%', background: 'var(--bg-void)' }} aria-hidden="true" />
-      )}
+    <div
+      style={{ width: '100%', height: '100%', background: 'var(--bg-void)', ...style }}
+      className={className}
+    >
+      <video
+        ref={videoRef}
+        src={src}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload={eager ? 'auto' : 'metadata'}
+        {...(poster ? { poster } : {})}
+        aria-label={ariaLabel}
+        style={{
+          width: '100%',
+          height: '100%',
+          display: 'block',
+          objectFit: 'cover',
+          background: 'var(--bg-void)',
+        }}
+      />
     </div>
   );
 }

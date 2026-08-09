@@ -1,11 +1,9 @@
-import { AnimatedSection } from './AnimatedSection';
 import { VideoEmbed } from './VideoEmbed';
 import { VIDEO_DEMO, VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
 
 export function SafetySection() {
   return (
-    <AnimatedSection>
-      <section style={{
+    <section style={{
         position: 'relative',
         background: 'var(--bg-deep)',
         padding: 'clamp(60px, 8vw, 100px) max(16px, env(safe-area-inset-right), 4vw) clamp(60px, 8vw, 100px) max(16px, env(safe-area-inset-left), 4vw)',
@@ -84,7 +82,7 @@ export function SafetySection() {
               <VideoEmbed
                 src={VIDEO_HERO}
                 poster={VIDEO_HERO_POSTER}
-                priority
+                eager
                 ariaLabel="Escape From Tarkov cheat demonstration with ESP and aimbot"
                 style={{ width: '100%', height: '100%' }}
               />
@@ -101,6 +99,7 @@ export function SafetySection() {
             }}>
               <VideoEmbed
                 src={VIDEO_DEMO}
+                eager
                 ariaLabel="Escape From Tarkov cheat overlay and feature demonstration"
                 style={{ width: '100%', height: '100%' }}
               />
@@ -108,6 +107,5 @@ export function SafetySection() {
           </div>
         </div>
       </section>
-    </AnimatedSection>
   );
 }
