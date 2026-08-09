@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { BUY_URL } from '../seo/site';
 import { SiteLogo } from './SiteLogo';
+import { BrandName } from './BrandName';
 
 const MOBILE_MQ = '(max-width: 920px)';
 
@@ -142,26 +143,9 @@ export function Navbar() {
           justifyContent: 'space-between',
           gap: '24px',
         }}>
-          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px', minWidth: 0 }}>
             <SiteLogo size={36} loading="eager" />
-            <span style={{
-              fontFamily: 'var(--font-display)',
-              fontWeight: 900,
-              fontSize: '1.1rem',
-              letterSpacing: '0.06em',
-              textTransform: 'uppercase',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-            }}>
-              <span style={{
-                background: 'linear-gradient(135deg, #c084fc 0%, #a855f7 60%, #7c3aed 100%)',
-                WebkitBackgroundClip: 'text',
-                backgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}>Tarkov</span>
-              <span style={{ color: '#ffffff' }}>Hacks</span>
-            </span>
+            <BrandName size="nav" />
           </Link>
 
           {!isMobile && (

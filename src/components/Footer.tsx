@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BUY_URL, SITE_NAME } from '../seo/site';
 import { SiteLogo } from './SiteLogo';
+import { BrandName } from './BrandName';
 
 const NAV = [
   { label: 'Home', to: '/' as const },
@@ -34,24 +35,7 @@ export function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', minWidth: 'min(100%, 240px)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <SiteLogo size={36} />
-              <span style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 900,
-                fontSize: '1.25rem',
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-              }}>
-                <span style={{
-                  background: 'linear-gradient(135deg, #c084fc 0%, #a855f7 60%, #7c3aed 100%)',
-                  WebkitBackgroundClip: 'text',
-                  backgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                }}>Tarkov</span>
-                <span style={{ color: '#ffffff' }}>Hacks</span>
-              </span>
+              <BrandName size="footer" />
             </div>
             <p style={{
               fontFamily: 'var(--font-body)',

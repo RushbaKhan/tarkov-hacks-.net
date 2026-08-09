@@ -1,21 +1,48 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 type VideoEmbedProps = {
   src: string;
+  poster?: string;
   className?: string;
   style?: React.CSSProperties;
   priority?: boolean;
   ariaLabel?: string;
 };
 
-export function VideoEmbed({ src, className, style, priority = false, ariaLabel }: VideoEmbedProps) {
+export function VideoEmbed({ src, poster, className, style, priority = false, ariaLabel }: VideoEmbedProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVisible, setIsVisible] = useState(priority);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { rootMargin: '120px', threshold: 0.1 },
+    );
+
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video) return;
+    if (!video || !isVisible) return;
 
-    const observer = new IntersectionObserver(
+    if (!isLoaded) {
+      video.src = src;
+      video.load();
+      setIsLoaded(true);
+    }
+
+    const playObserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           void video.play().catch(() => undefined);
@@ -23,26 +50,38 @@ export function VideoEmbed({ src, className, style, priority = false, ariaLabel 
           video.pause();
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.25 },
     );
 
-    observer.observe(video);
-    return () => observer.disconnect();
-  }, []);
+    playObserver.observe(video);
+    return () => playObserver.disconnect();
+  }, [isVisible, isLoaded, src]);
 
   return (
-    <video
-      ref={videoRef}
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload={priority ? 'auto' : 'metadata'}
-      aria-label={ariaLabel}
-      className={className}
-      style={{ width: '100%', height: 'auto', display: 'block', ...style }}
-    >
-      <source src={src} type="video/mp4" />
-    </video>
+    <div ref={containerRef} style={{ width: '100%', height: '100%', background: 'var(--bg-void)', ...style }} className={className}>
+      {isVisible ? (
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          poster={poster}
+          aria-label={ariaLabel}
+          style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+        />
+      ) : (
+        poster ? (
+          <img
+            src={poster}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        ) : null
+      )}
+    </div>
   );
 }

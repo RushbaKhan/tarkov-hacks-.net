@@ -90,7 +90,7 @@ export function HeroSection() {
             fontWeight: 600,
             color: 'var(--accent-bright)',
             letterSpacing: '0.04em',
-          }}>Player ESP · Loot ESP · BattlEye Bypass</span>
+          }}>Patch-Ready · Legit ESP · External Loader</span>
         </div>
 
         <h1 style={{
@@ -125,9 +125,9 @@ export function HeroSection() {
           maxWidth: '560px',
           marginBottom: 'clamp(28px, 4vw, 40px)',
         }}>
-          Undetected EFT cheat with player ESP, loot ESP, extraction tracking, Scav and PMC identification,
-          aimbot with distance limits, no recoil, container ESP, quest item highlighting, stream-proof mode,
-          and optional CLOUD-DMA on AWS.
+          Undetected Escape From Tarkov cheat with private player ESP, precision aimbot, wallhack,
+          loot filters, extraction tracking, and no recoil. Instant delivery from $35, patch-ready updates,
+          and Discord setup help after checkout.
         </p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: 'clamp(24px, 3vw, 32px)' }}>
@@ -147,9 +147,30 @@ export function HeroSection() {
           fontSize: '0.75rem',
           color: 'var(--text-muted)',
           letterSpacing: '0.02em',
+          marginBottom: '12px',
         }}>
-          Windows 10 &amp; 11 · BattlEye Bypass · Stream-Proof · 24/7 Support · CLOUD-DMA Available
+          Windows 10 &amp; 11 · BSG &amp; Steam · Instant Delivery · 24/7 Support · CLOUD-DMA Available
         </p>
+
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+          {['From $35', 'Patch-ready', 'Discord support', 'Loot ESP filters'].map(label => (
+            <span
+              key={label}
+              style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.6875rem',
+                fontWeight: 600,
+                color: 'var(--text-secondary)',
+                padding: '5px 10px',
+                borderRadius: '100px',
+                border: '1px solid var(--border-ghost)',
+                background: 'rgba(255,255,255,0.03)',
+              }}
+            >
+              {label}
+            </span>
+          ))}
+        </div>
 
         <div style={{
           position: 'absolute',

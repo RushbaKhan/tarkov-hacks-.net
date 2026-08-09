@@ -1,23 +1,22 @@
 export const SITE_URL = 'https://tarkovhacks.net';
 export const SITE_NAME = 'TarkovHacks.net';
-export const SITE_SHORT_NAME = 'Tarkov Hacks';
+export const SITE_SHORT_NAME = 'Escape From Tarkov Hacks';
 export const GAME_NAME = 'ESCAPE FROM TARKOV';
 export const BUY_URL = 'https://zadeyo.com/go/RUSHBA?to=%2Fproducts%2Fescape-from-tarkov';
-export const LOGO_URL = 'https://zadeyo.com/_next/image?url=%2Frt-removebg-preview.png&w=64&q=75';
+export const LOGO_URL = '/logo.png';
 export const LOGO_URL_LOCAL = `${SITE_URL}/logo.png`;
 export const FAVICON_URL = `${SITE_URL}/favicon.ico`;
 export const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 export const INDEXNOW_KEY = '7f3c9a2e-1b4d-4e8f-9c6a-2d5e8f1a3b7c';
-export const VIDEO_HERO =
-  'https://drive.google.com/uc?export=download&id=1eSbqz1tupcC5X20iS2bAijCKOxMkjwDX';
+export const VIDEO_HERO = '/eft-hero-demo-compressed.mp4';
+export const VIDEO_HERO_POSTER = '/eft-screenshot-1.webp';
 export const VIDEO_DEMO =
   'https://bryjchknhsrmjdunnfer.supabase.co/storage/v1/object/public/575/0510(3).mp4';
+export const VIDEO_DEMO_POSTER = '/eft-screenshot-2.webp';
 
 export const TARKOV_SCREENSHOTS = [
   '/eft-screenshot-1.webp',
   '/eft-screenshot-2.webp',
-  'https://zadeyo.com/whsatano/ancient_eft_s1-12532c5e0f92.webp',
-  'https://zadeyo.com/whsatano/ancient_eft_s2-0fa3b4b7f6da.webp',
 ] as const;
 export const PRIMARY_KEYWORDS = [
   'Escape From Tarkov Cheats',

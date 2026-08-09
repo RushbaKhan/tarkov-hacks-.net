@@ -1,6 +1,6 @@
 import { AnimatedSection } from './AnimatedSection';
 import { VideoEmbed } from './VideoEmbed';
-import { VIDEO_DEMO, VIDEO_HERO } from '../seo/site';
+import { VIDEO_HERO, VIDEO_HERO_POSTER } from '../seo/site';
 
 export function SafetySection() {
   return (
@@ -32,7 +32,7 @@ export function SafetySection() {
           alignItems: 'center',
         }}>
           <div>
-            <span className="section-label" style={{ marginBottom: '16px', display: 'flex' }}>BattlEye Bypass</span>
+            <span className="section-label" style={{ marginBottom: '16px', display: 'flex' }}>Patch-Ready · BattlEye Bypass</span>
             <h2 style={{
               fontFamily: 'var(--font-display)',
               fontSize: 'clamp(1.8rem, 4vw, 2.8rem)',
@@ -45,9 +45,9 @@ export function SafetySection() {
               <span className="gradient-text">Engineered to Stay Safe.</span>
             </h2>
             {[
-              'Our Escape From Tarkov cheat is the undetected ESP and aimbot package built for EFT raids. It bypasses BattlEye with external architecture, stream-proof mode, and rapid updates after every patch so your loader stays aligned with live servers.',
-              'After every EFT update, compatible builds ship through the loader — usually without a full re-download. Player ESP, loot ESP, extraction tracking, and aimbot stay available when you need them most.',
-              'Need help with setup? Dedicated guides, video walkthroughs, and 24/7 support are available. Get direct answers about EFT ESP configuration, BattlEye compatibility, and CLOUD-DMA on AWS.',
+              'Private player ESP, precision aimbot, and wallhack for Escape From Tarkov raids — patch-ready loader updates after BattlEye changes, loot filters for Interchange and Lighthouse, and Discord setup help after checkout.',
+              'After every EFT wipe or hotfix, compatible builds ship through the loader — usually without a full re-download. Player ESP, loot ESP, extraction tracking, and aimbot stay aligned with live servers.',
+              'Plans start from $35 with instant delivery, 24/7 support, and Windows 10 & 11 compatibility on both the BSG launcher and Steam builds.',
             ].map((p, i) => (
               <p key={i} style={{
                 fontFamily: 'var(--font-body)',
@@ -79,11 +79,14 @@ export function SafetySection() {
               overflow: 'hidden',
               aspectRatio: '16/9',
               position: 'relative',
+              background: 'var(--bg-void)',
             }}>
               <VideoEmbed
                 src={VIDEO_HERO}
+                poster={VIDEO_HERO_POSTER}
+                priority
                 ariaLabel="Escape From Tarkov cheat demonstration with ESP and aimbot"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                style={{ width: '100%', height: '100%' }}
               />
             </div>
 
@@ -92,10 +95,14 @@ export function SafetySection() {
               borderRadius: 'var(--radius-lg)',
               border: '1px solid var(--border-ghost)',
               overflow: 'hidden',
+              aspectRatio: '16/9',
             }}>
-              <VideoEmbed
-                src={VIDEO_DEMO}
-                ariaLabel="Escape From Tarkov ESP overlay and loot tracking demo"
+              <img
+                src="/eft-screenshot-2.webp"
+                alt="Escape From Tarkov loot ESP and player overlay in raid"
+                loading="lazy"
+                decoding="async"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
             </div>
           </div>

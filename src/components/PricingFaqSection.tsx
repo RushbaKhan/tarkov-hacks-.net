@@ -11,7 +11,7 @@ type Plan = {
 };
 
 const PLANS: Plan[] = [
-  { id: 'monthly', label: 'Monthly', price: 40, detail: '31 days of access', badge: 'Best' },
+  { id: 'monthly', label: 'Monthly', price: 35, detail: '31 days of access', badge: 'Best' },
   { id: 'lifetime', label: 'Lifetime', price: 150, detail: 'Unlimited access' },
 ];
 
