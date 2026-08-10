@@ -109,7 +109,7 @@ function RouteSeo() {
     return (
       <Seo
         title="Privacy Policy | TarkovHacks.net"
-        description="Privacy policy for TarkovHacks.net — how we handle visitor data, cookies, and third-party links on our Escape From Tarkov cheats website."
+        description="Privacy policy for TarkovHacks.net — how we handle visitor data, cookies, and third-party links on our Escape From Tarkov hacks website."
         path="/privacy"
         structuredData={{
           '@context': 'https://schema.org',

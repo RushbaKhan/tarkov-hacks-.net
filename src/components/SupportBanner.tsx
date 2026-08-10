@@ -39,13 +39,13 @@ export function SupportBanner() {
             maxWidth: '560px',
             margin: '0 auto 24px',
           }}>
-            Instant access to Escape From Tarkov cheats with player ESP, loot ESP, extraction ESP,
+            Instant access to Escape From Tarkov hacks with player ESP, loot ESP, extraction ESP,
             aimbot, no recoil, and stream-proof mode. Updated after EFT patches with 24/7 support.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY HACKS
+              Order Now
             </a>
           </div>
         </div>

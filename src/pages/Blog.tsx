@@ -458,7 +458,7 @@ export function BlogPostPage() {
               marginBottom: '20px',
             }}>EFT ESP, aimbot, loot ESP, extraction tracking, and no recoil. Updated after every patch.</p>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY HACKS
+              Get EFT Hacks
             </a>
           </div>
 

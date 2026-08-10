@@ -132,7 +132,7 @@ export function HeroSection() {
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: 'clamp(24px, 3vw, 32px)' }}>
           <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-            BUY HACKS
+            Get EFT Hacks
           </a>
           <a href="#pricing" className="btn-ghost">
             See pricing &amp; features

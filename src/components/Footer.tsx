@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom';
 import { BUY_URL, SITE_NAME } from '../seo/site';
 import { SiteLogo } from './SiteLogo';
 import { BrandName } from './BrandName';
+import { SocialShare } from './SocialShare';
 
 const NAV = [
-  { label: 'Home', to: '/' as const },
-  { label: 'Blog', to: '/blog' as const },
-  { label: 'Privacy', to: '/privacy' as const },
+  { label: 'Homepage', to: '/' as const },
+  { label: 'EFT Guides', to: '/blog' as const },
+  { label: 'Privacy Policy', to: '/privacy' as const },
 ];
 
 const footLink = {
@@ -45,7 +46,7 @@ export function Footer() {
               maxWidth: '320px',
               margin: 0,
             }}>
-              Escape From Tarkov cheats with ESP, aimbot, loot ESP, extraction tracking, and no recoil. Updated after EFT patches.
+              Escape From Tarkov hacks with ESP, aimbot, loot ESP, extraction tracking, and no recoil. Updated after EFT patches.
             </p>
           </div>
 
@@ -79,7 +80,7 @@ export function Footer() {
               onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--text-secondary)'; }}
               onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.color = 'var(--text-muted)'; }}
             >
-              BUY HACKS
+              Shop Now
             </a>
           </nav>
         </div>
@@ -93,6 +94,7 @@ export function Footer() {
           alignItems: 'center',
           gap: '12px',
         }}>
+          <SocialShare />
           <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
             © 2026 {SITE_NAME}. Not affiliated with Battlestate Games.
           </span>

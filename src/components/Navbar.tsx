@@ -119,7 +119,7 @@ export function Navbar() {
               textAlign: 'center',
             }}
           >
-            BUY HACKS
+            Get Hacks
           </a>
         </div>
       )}
@@ -172,7 +172,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 style={buyButtonStyle}
               >
-                BUY HACKS
+                Purchase
               </a>
             )}
 

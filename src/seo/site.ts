@@ -37,8 +37,8 @@ export const PRIMARY_KEYWORDS = [
 
 export const HOME_FAQ = [
   {
-    q: 'What are Escape From Tarkov cheats?',
-    a: 'Escape From Tarkov cheats are external tools that add ESP overlays, aim assistance, loot tracking, and combat utilities to EFT raids. Our package focuses on player ESP, loot ESP, extraction tracking, aimbot, no recoil, and BattlEye-focused protection with regular updates after patches.',
+    q: 'What are Escape From Tarkov hacks?',
+    a: 'Escape From Tarkov hacks are external tools that add ESP overlays, aim assistance, loot tracking, and combat utilities to EFT raids. Our package focuses on player ESP, loot ESP, extraction tracking, aimbot, no recoil, and BattlEye-focused protection with regular updates after patches.',
   },
   {
     q: 'What features are included in the Escape From Tarkov ESP?',
@@ -53,7 +53,7 @@ export const HOME_FAQ = [
     a: 'Yes. Player ESP displays PMCs and Scavs through walls with skeleton overlays, health and stamina bars, distance readouts, and team identification so you know who is approaching before a fight starts.',
   },
   {
-    q: 'Does the cheat include loot ESP?',
+    q: 'Does the hack include loot ESP?',
     a: 'Yes. Loot ESP highlights weapons, meds, keys, and high-value items on the map. Container ESP marks med cases, weapon boxes, and stashes so you route toward profitable loot instead of searching every room blindly.',
   },
   {
@@ -69,7 +69,7 @@ export const HOME_FAQ = [
     a: 'Yes. Quest item highlighting surfaces objectives required for active tasks — find specific items, keys, or locations faster during busy raids.',
   },
   {
-    q: 'Does the cheat include no recoil?',
+    q: 'Does the hack include no recoil?',
     a: 'Yes. No recoil compensation is available for all weapons, reducing kick during automatic fire and making follow-up shots more consistent in PvP and PvE.',
   },
   {
@@ -89,7 +89,7 @@ export const HOME_FAQ = [
     a: 'The AWS option deploys the CLOUD-DMA stack on Amazon Web Services infrastructure for low-latency remote execution. Setup details are provided after purchase for supported configurations.',
   },
   {
-    q: 'How often are Escape From Tarkov cheats updated?',
+    q: 'How often are Escape From Tarkov hacks updated?',
     a: 'Updates ship through the loader after major EFT patches and BattlEye changes — typically within hours of a new game build. You receive compatible builds without full re-downloads in most cases.',
   },
 ] as const;

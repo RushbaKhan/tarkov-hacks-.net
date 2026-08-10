@@ -62,7 +62,7 @@ export function SeoContentSection() {
             lineHeight: 1.75,
             marginBottom: 36,
           }}>
-            Everything you need to know about EFT cheats — player ESP, loot ESP, extraction tracking, aimbot, no recoil, BattlEye compatibility, and how to get started on tarkovhacks.net.
+            Everything you need to know about EFT hacks — player ESP, loot ESP, extraction tracking, aimbot, no recoil, BattlEye compatibility, and how to get started on tarkovhacks.net.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
@@ -105,15 +105,15 @@ export function SeoContentSection() {
               marginBottom: 16,
             }}>
               Ready to run EFT raids with full awareness? Explore our{' '}
-              <Link to="/blog" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>Tarkov cheats blog guides</Link>
+              <Link to="/blog" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>Tarkov hacks blog guides</Link>
               {' '}for in-depth ESP and aimbot tutorials, or{' '}
               <a href={BUY_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>
-                get Escape From Tarkov cheats
+                get Escape From Tarkov hacks
               </a>
               {' '}with instant delivery and 24/7 support.
             </p>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
-              BUY HACKS
+              Instant Access
             </a>
           </div>
         </div>
