@@ -90,7 +90,7 @@ export function HeroSection() {
             fontWeight: 600,
             color: 'var(--accent-bright)',
             letterSpacing: '0.04em',
-          }}>Patch-Ready · Legit ESP · External Loader</span>
+          }}>Legit ESP · Patch-ready · External</span>
         </div>
 
         <h1 style={{
@@ -125,9 +125,8 @@ export function HeroSection() {
           maxWidth: '560px',
           marginBottom: 'clamp(28px, 4vw, 40px)',
         }}>
-          Undetected Escape From Tarkov cheat with private player ESP, precision aimbot, wallhack,
-          loot filters, extraction tracking, and no recoil. Instant delivery from $35, patch-ready updates,
-          and Discord setup help after checkout.
+          Private player ESP, precision aimbot, and wallhack for Escape From Tarkov raids — patch-ready loader updates,
+          loot filters, and setup help after checkout. Instant delivery from $35.
         </p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: 'clamp(24px, 3vw, 32px)' }}>
@@ -153,7 +152,7 @@ export function HeroSection() {
         </p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-          {['From $35', 'Patch-ready', 'Discord support', 'Loot ESP filters'].map(label => (
+          {['Instant delivery', 'Patch-ready', 'Discord support', 'Windows 10 & 11'].map(label => (
             <span
               key={label}
               style={{

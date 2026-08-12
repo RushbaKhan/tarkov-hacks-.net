@@ -4,28 +4,28 @@ import { BUY_URL } from '../seo/site';
 
 const CONTENT_BLOCKS = [
   {
-    title: 'What Are Escape From Tarkov Hacks?',
-    body: `Escape From Tarkov cheats are external tools built for EFT raids on Windows. Our package combines player ESP with skeleton overlay, loot ESP, extraction point ESP, Scav and PMC identification, aimbot with distance limits, no recoil, container ESP, quest item highlighting, stream-proof mode, and optional CLOUD-DMA on AWS. Whether you run solo PMC raids or squad extracts, EFT cheats give you the information to survive longer, find valuable loot faster, and extract safely without guessing where threats are hiding.`,
+    title: 'Tarkov ESP, Aimbot & Wallhack — Built for Wipes and PvP',
+    body: `If you searched Escape From Tarkov cheats or Tarkov hacks, you want clear docs on Tarkov ESP, aimbot tuning, and wallhack — not vague marketing. TarkovHacks.net lists modules, pricing from $35, patch-ready loader updates, and in-depth map guides on the blog. BattlEye is live on EFT; any EFT hack can ban. Use checkout refund rules, keep the loader current, and read the feature list before you buy.`,
   },
   {
-    title: 'Escape From Tarkov Aimbot — Precision for Every Engagement',
-    body: `The Tarkov aimbot is configurable for close-quarters fights in Factory and longer engagements on Woods or Shoreline. Set activation hotkeys, FOV, target bone, smoothing, and maximum distance. Visibility checks prevent tracking through solid cover, while humanized smoothing keeps movement natural during PvP. Pair aimbot with no recoil for all weapons to stabilize automatic fire during sustained fights against PMCs and Scavs.`,
+    title: 'Raid Clarity — Player ESP, Extracts & Grenade Awareness',
+    body: `Player ESP, extract markers, and grenade warnings help you see fights before they start. Skeleton overlays, Scav and PMC identification, and distance readouts give you the information to rotate safely on Customs, Labs, Factory, and Streets of Tarkov. Pair player ESP with extraction point ESP so you never scramble for an exit when the timer drops.`,
   },
   {
-    title: 'Escape From Tarkov ESP & Wallhack — Full Raid Awareness',
-    body: `EFT ESP reveals players, health, stamina, distance, and team status through walls and terrain. Player ESP with skeleton overlay helps you track movement before someone swings a corner. Loot ESP highlights weapons, meds, keys, and valuables. Container ESP marks med cases and weapon boxes. Extraction point ESP shows available exits so you plan routes early. Quest item highlighting surfaces active objectives without constantly checking your tasks menu mid-raid.`,
+    title: 'Economy Speed — Loot ESP with Price Filters',
+    body: `Loot ESP with price filters speeds profit runs on Interchange, Lighthouse, Reserve, and wipe week key hunts. Container ESP marks med cases and weapon boxes. Quest item highlighting surfaces active objectives without tabbing out mid-raid. Route toward high-value loot instead of searching every room blindly.`,
   },
   {
-    title: 'Loot ESP, Container ESP & Extraction Tracking',
-    body: `Tarkov rewards efficient loot routing. Loot ESP finds rare items instantly across the map. Container ESP focuses searches on med cases, weapon boxes, and stashes that actually hold profit. Extraction point ESP marks your exits — critical when the raid timer drops and you need a safe path out. Combined with Scav and PMC identification, you avoid unnecessary fights and push toward high-value areas with confidence.`,
+    title: 'Patch-Ready Loader Updates After BattlEye',
+    body: `Loader updates ship after BattlEye patches — active keys get fresh builds via Discord and the auto-update loader. External architecture targets EFT anti-cheat compatibility after every Battlestate build. No provider can promise permanent undetected status, but active maintenance and conservative defaults matter on live servers.`,
   },
   {
-    title: 'BattlEye Bypass, Stream-Proof Mode & Tarkov Cheat Updates',
-    body: `Our Escape From Tarkov cheat runs externally with a BattlEye bypass system focused on patch compatibility. Stream-proof mode hides overlays from OBS, Discord, and capture software. Updates ship through the loader after EFT patches — usually within hours of a new build. CLOUD-DMA and AWS options provide remote execution for users who want maximum local isolation. No cheat eliminates ban risk entirely, but active maintenance and conservative defaults matter on live servers.`,
+    title: 'Best Escape From Tarkov Cheats for 2026 Wipes',
+    body: `Ranking well for Tarkov cheats means more than a menu screenshot — it is ESP clarity on Labs, aimbot tuning on Woods, and honest docs when BattlEye updates. We target the same searches you type: Escape From Tarkov cheats, Escape From Tarkov hacks, Tarkov ESP, EFT aimbot, and Tarkov wallhack. Start with the features list, watch the hero demo, then read map guides before checkout.`,
   },
   {
-    title: 'System Requirements & Getting Started',
-    body: `Escape From Tarkov cheats support Windows 10 and Windows 11 on Intel and AMD systems with 8 GB RAM or more. After purchase you receive instant loader access, setup instructions, and 24/7 support. Configuration takes under two minutes: adjust Windows settings, launch the loader, open EFT, and enable ESP, aimbot, or loot tracking from the overlay. Read our blog for detailed guides on EFT ESP, aimbot setup, loot ESP, and staying updated after every patch.`,
+    title: 'Tarkov Cheat Guides — ESP, Aimbot, Loot & BattlEye',
+    body: `Our blog covers ESP filters, Labs PvP, BattlEye notes, aimbot FOV and bone selection, loot routing, and wipe prep. Each guide explains practical raid scenarios with realistic expectations for post-patch maintenance. New players should start with the ESP guide, then move to aimbot and loot articles before enabling advanced combat assists in live raids.`,
   },
 ];
 
@@ -41,7 +41,7 @@ export function SeoContentSection() {
         }}
       >
         <div style={{ maxWidth: 860, margin: '0 auto' }}>
-          <span className="section-label" style={{ marginBottom: 16, display: 'flex' }}>Complete Guide</span>
+          <span className="section-label" style={{ marginBottom: 16, display: 'flex' }}>Why Players Use EFT Cheats</span>
           <h2
             id="seo-content-heading"
             style={{
@@ -53,7 +53,7 @@ export function SeoContentSection() {
               letterSpacing: '-0.02em',
             }}
           >
-            Escape From Tarkov Hacks — ESP, Aimbot &amp; Wallhack Explained
+            Escape From Tarkov Hacks — ESP, Aimbot &amp; Wallhack
           </h2>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -62,7 +62,7 @@ export function SeoContentSection() {
             lineHeight: 1.75,
             marginBottom: 36,
           }}>
-            Everything you need to know about EFT hacks — player ESP, loot ESP, extraction tracking, aimbot, no recoil, BattlEye compatibility, and how to get started on tarkovhacks.net.
+            Every core page for Tarkov cheats and EFT hacks on tarkovhacks.net: full features list, pricing from $35, patch-ready loader updates, and long-form raid guides.
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
@@ -104,13 +104,13 @@ export function SeoContentSection() {
               lineHeight: 1.7,
               marginBottom: 16,
             }}>
-              Ready to run EFT raids with full awareness? Explore our{' '}
-              <Link to="/blog" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>Tarkov hacks blog guides</Link>
-              {' '}for in-depth ESP and aimbot tutorials, or{' '}
+              Ready to buy? Instant delivery · ESP &amp; aimbot · From $35. Explore our{' '}
+              <Link to="/blog" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>Tarkov cheat guides</Link>
+              {' '}for ESP, aimbot, and map tutorials, or{' '}
               <a href={BUY_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-bright)', textDecoration: 'none' }}>
-                get Escape From Tarkov hacks
+                purchase Escape From Tarkov hacks
               </a>
-              {' '}with instant delivery and 24/7 support.
+              {' '}with instant loader access.
             </p>
             <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Instant Access

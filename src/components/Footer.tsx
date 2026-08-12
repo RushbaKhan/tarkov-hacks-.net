@@ -46,7 +46,7 @@ export function Footer() {
               maxWidth: '320px',
               margin: 0,
             }}>
-              Escape From Tarkov hacks with ESP, aimbot, loot ESP, extraction tracking, and no recoil. Updated after EFT patches.
+              Tarkov cheats and EFT hacks with ESP, aimbot, wallhack, loot filters, and patch-ready updates. Instant delivery from $35.
             </p>
           </div>
 

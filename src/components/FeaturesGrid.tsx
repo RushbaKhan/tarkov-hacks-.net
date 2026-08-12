@@ -144,8 +144,8 @@ export function FeaturesGrid() {
                 lineHeight: 1.7,
                 maxWidth: '680px',
               }}>
-                Escape From Tarkov ESP gives you full control over what you see. Player ESP with skeleton overlay,
-                Scav and PMC identification, extraction point ESP, stamina and health display, and configurable distance filters.
+                Escape From Tarkov ESP gives you raid clarity — player ESP with skeleton overlay,
+                extract markers, Scav and PMC identification, and grenade awareness so you see fights before they start.
               </p>
             </div>
           </AnimatedSection>
@@ -215,7 +215,7 @@ export function FeaturesGrid() {
                 color: 'var(--text-secondary)',
                 lineHeight: 1.7,
                 marginBottom: '24px',
-              }}>EFT is about extracting with profit. Loot ESP, container ESP, and quest item highlighting cut search time on every raid.</p>
+              }}>Loot ESP with price filters for Interchange, Lighthouse, and quest keys on wipe week. Container ESP and quest item highlighting cut search time on every raid.</p>
               <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '8px' }}>
                 {lootFeatures.map(f => <BulletItem key={f.label} label={f.label} desc={f.desc} />)}
               </ul>
@@ -291,8 +291,8 @@ export function FeaturesGrid() {
                 lineHeight: 1.7,
                 maxWidth: '680px',
               }}>
-                The EFT aimbot includes distance limits, bone selection, smoothing, and visibility checks.
-                Pair it with no recoil for all weapons to stay accurate during automatic fire.
+                The Tarkov aimbot includes FOV, bone selection, distance caps, and smoothing for map-specific presets.
+                Pair it with no recoil for controlled engagements on Factory, Woods, and Shoreline.
               </p>
             </div>
           </AnimatedSection>

@@ -17,7 +17,7 @@ export function SupportBanner() {
             color: 'var(--text-secondary)',
             marginBottom: '12px',
           }}>
-            Ready to run Escape From Tarkov raids with full awareness?
+            Ready to buy?
           </p>
 
           <h2 style={{
@@ -28,7 +28,7 @@ export function SupportBanner() {
             marginBottom: '16px',
             lineHeight: 1.2,
           }}>
-            EFT ESP, Aimbot &amp; Loot Tracking — Get Started Today
+            Tarkov ESP, Aimbot &amp; Wallhack — Instant Delivery from $35
           </h2>
 
           <p style={{
@@ -39,8 +39,8 @@ export function SupportBanner() {
             maxWidth: '560px',
             margin: '0 auto 24px',
           }}>
-            Instant access to Escape From Tarkov hacks with player ESP, loot ESP, extraction ESP,
-            aimbot, no recoil, and stream-proof mode. Updated after EFT patches with 24/7 support.
+            Instant access to Escape From Tarkov cheats with player ESP, loot ESP with price filters, aimbot,
+            wallhack, and patch-ready loader updates after BattlEye patches. 24/7 support after checkout.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>

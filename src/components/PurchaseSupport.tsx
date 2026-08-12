@@ -27,7 +27,7 @@ export function PurchaseSupport() {
               lineHeight: 1.25,
               marginBottom: '10px',
             }}>
-              Get Escape From Tarkov Hacks — instant delivery from $35.
+              Ready to buy? Escape From Tarkov hacks — instant delivery from $35.
             </h2>
             <p style={{
               fontFamily: 'var(--font-body)',
@@ -36,7 +36,7 @@ export function PurchaseSupport() {
               lineHeight: 1.65,
               maxWidth: '560px',
             }}>
-              Player ESP, aimbot, loot ESP, extraction tracking, and no recoil. Patch-ready loader updates and 24/7 support after checkout.
+              Player ESP, aimbot, wallhack, loot ESP, and patch-ready loader updates. Instant delivery and 24/7 support after checkout.
             </p>
           </div>
           <a

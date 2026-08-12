@@ -107,7 +107,7 @@ export function BlogListPage() {
           pointerEvents: 'none',
         }} />
         <div style={{ maxWidth: 1280, margin: '0 auto' }}>
-          <span className="section-label" style={{ marginBottom: '16px', display: 'flex' }}>Knowledge Base</span>
+          <span className="section-label" style={{ marginBottom: '16px', display: 'flex' }}>Tarkov Cheat Guides</span>
           <h1 style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'clamp(2.2rem, 6vw, 4rem)',
@@ -117,7 +117,7 @@ export function BlogListPage() {
             marginBottom: '16px',
           }}>
             Escape From Tarkov{' '}
-            <span className="gradient-text">Hacks Blog</span>
+            <span className="gradient-text">Cheat Guides</span>
           </h1>
           <p style={{
             fontFamily: 'var(--font-body)',
@@ -126,7 +126,7 @@ export function BlogListPage() {
             maxWidth: '560px',
             lineHeight: 1.65,
           }}>
-            Guides on EFT ESP, player and loot tracking, aimbot setup, no recoil, BattlEye compatibility, and Tarkov cheat updates.
+            Guides on Tarkov ESP, EFT aimbot, loot filters, BattlEye compatibility, map PvP, and Escape From Tarkov cheat updates for 2026 wipes.
           </p>
         </div>
       </section>

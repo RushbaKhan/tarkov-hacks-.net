@@ -14,82 +14,49 @@ export const VIDEO_DEMO = '/eft-demo-compressed.mp4';
 
 export { TARKOV_SCREENSHOTS } from './screenshots';
 export const PRIMARY_KEYWORDS = [
+  'Escape From Tarkov Cheats',
   'Escape From Tarkov Hacks',
-  'Escape From Tarkov Cheat',
-  'Escape From Tarkov Hacks',
+  'Tarkov Cheats',
+  'Tarkov Hacks',
+  'Tarkov ESP',
+  'EFT ESP',
+  'EFT Aimbot',
+  'Tarkov Aimbot',
+  'Tarkov Wallhack',
   'Escape From Tarkov ESP',
   'Escape From Tarkov Aimbot',
   'Escape From Tarkov Wallhack',
   'EFT Hacks',
-  'EFT ESP',
-  'EFT Aimbot',
-  'Tarkov Hacks',
-  'Tarkov ESP',
-  'Tarkov Aimbot',
-  'Tarkov Hacks',
   'Loot ESP',
   'Player ESP',
-  'Extraction ESP',
-  'No Recoil',
   'BattlEye Bypass',
   'Stream Proof',
+  'Cloud DMA',
 ] as const;
 
 export const HOME_FAQ = [
   {
-    q: 'What are Escape From Tarkov hacks?',
-    a: 'Escape From Tarkov hacks are external tools that add ESP overlays, aim assistance, loot tracking, and combat utilities to EFT raids. Our package focuses on player ESP, loot ESP, extraction tracking, aimbot, no recoil, and BattlEye-focused protection with regular updates after patches.',
+    q: 'What are Escape From Tarkov cheats?',
+    a: 'Escape From Tarkov cheats are external tools that add ESP, aimbot, wallhack, loot filters, and raid utilities on top of the live game. They read game state and draw overlays on your screen. Every EFT cheat carries ban risk because BattlEye monitors abnormal behavior.',
   },
   {
-    q: 'What features are included in the Escape From Tarkov ESP?',
-    a: 'The EFT ESP includes player ESP with skeleton overlay, loot ESP for rare items, extraction point ESP, Scav and PMC identification, container ESP for med cases and weapon boxes, quest item highlighting, stamina and health display, and configurable distance filters.',
+    q: 'Do Tarkov cheats work on Steam and the BSG launcher?',
+    a: 'Most current Escape From Tarkov hack packages support both the official Battlestate launcher and Steam builds on Windows 10 and 11. Confirm your edition on the checkout page before you buy Tarkov cheats or hacks.',
   },
   {
-    q: 'What does the Tarkov aimbot include?',
-    a: 'The Tarkov aimbot includes customizable activation, FOV limits, bone selection, distance limits, smoothing for natural movement, and visibility checks so you can tune behavior for CQB in Factory or longer engagements on Woods and Shoreline.',
+    q: 'How much do Tarkov ESP and aimbot plans cost?',
+    a: 'Plans commonly start around $35 for roughly 31 days of access, with lifetime options near $150 depending on the package. You get instant delivery and loader access after payment. Final price is shown at checkout.',
   },
   {
-    q: 'Does the EFT ESP show players?',
-    a: 'Yes. Player ESP displays PMCs and Scavs through walls with skeleton overlays, health and stamina bars, distance readouts, and team identification so you know who is approaching before a fight starts.',
+    q: 'Is there a refund policy?',
+    a: 'Digital cheat products are usually non-refundable once the loader key is delivered. Read the refund terms on the checkout page before purchase. Contact support through the order portal if the loader fails to activate on a supported PC.',
   },
   {
-    q: 'Does the hack include loot ESP?',
-    a: 'Yes. Loot ESP highlights weapons, meds, keys, and high-value items on the map. Container ESP marks med cases, weapon boxes, and stashes so you route toward profitable loot instead of searching every room blindly.',
+    q: 'How do I get support after I buy Escape From Tarkov hacks?',
+    a: 'After checkout you receive setup steps and access to Discord or ticket support for install help, HWID resets, and post-patch loader issues. Keep your order email and key private.',
   },
   {
-    q: 'Can the ESP identify Scavs and PMCs?',
-    a: 'Yes. Scav and PMC identification separates AI Scavs, player Scavs, and PMCs with distinct colors and labels. That helps you decide when to engage, avoid, or push toward an extract under pressure.',
-  },
-  {
-    q: 'Does it show extraction points?',
-    a: 'Yes. Extraction point ESP marks available extracts for your raid, including conditional exits when requirements are met. You can plan routes early instead of scrambling when the timer runs low.',
-  },
-  {
-    q: 'Does it show quest items?',
-    a: 'Yes. Quest item highlighting surfaces objectives required for active tasks — find specific items, keys, or locations faster during busy raids.',
-  },
-  {
-    q: 'Does the hack include no recoil?',
-    a: 'Yes. No recoil compensation is available for all weapons, reducing kick during automatic fire and making follow-up shots more consistent in PvP and PvE.',
-  },
-  {
-    q: 'What is the BattlEye bypass system?',
-    a: 'The BattlEye bypass system refers to external architecture and update routines designed to stay compatible with EFT anti-cheat after patches. No tool can guarantee permanent undetected status, but active maintenance and conservative defaults reduce risk.',
-  },
-  {
-    q: 'What is Stream-Proof mode?',
-    a: 'Stream-proof mode hides the overlay from OBS, Discord, and most capture software so overlays do not appear on stream or recordings when enabled.',
-  },
-  {
-    q: 'What is the CLOUD-DMA option?',
-    a: 'CLOUD-DMA is an optional remote execution path that runs cheat logic on isolated cloud hardware via DMA-style workflows, reducing local footprint for users who want maximum separation from their gaming PC.',
-  },
-  {
-    q: 'What is the AWS option?',
-    a: 'The AWS option deploys the CLOUD-DMA stack on Amazon Web Services infrastructure for low-latency remote execution. Setup details are provided after purchase for supported configurations.',
-  },
-  {
-    q: 'How often are Escape From Tarkov hacks updated?',
-    a: 'Updates ship through the loader after major EFT patches and BattlEye changes — typically within hours of a new game build. You receive compatible builds without full re-downloads in most cases.',
+    q: 'Will Tarkov wallhack get me banned?',
+    a: 'Any third-party Escape From Tarkov cheat can lead to account bans. Providers update after patches but cannot guarantee zero detection. Use alt accounts if you accept that risk and never trust “100% undetected” marketing.',
   },
 ] as const;
