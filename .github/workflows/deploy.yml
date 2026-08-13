@@ -22,14 +22,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.node-version'
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and validate
-        run: npm run build:validate
+      - name: Build
+        run: npm run build
 
       - name: Verify Cloudflare credentials
         run: |
@@ -43,8 +43,6 @@ jobs:
             missing=1
           fi
           if [ "$missing" -eq 1 ]; then
-            echo "Create token: https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
-            echo "Use template: Edit Cloudflare Workers. Account ID is on the Cloudflare dashboard overview."
             exit 1
           fi
 

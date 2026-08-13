@@ -1,48 +1,41 @@
-# Tarkov Cheats — Marketing Site
+# TarkovHacks.net
 
-Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
+Production website for **Escape From Tarkov** cheat content — ESP, aimbot, loot ESP, extraction tracking, and related guides.
+
+**Live domain:** [https://tarkovhacks.net/](https://tarkovhacks.net/)
 
 ## Stack
 
-- Astro 7 + Tailwind CSS 4 + TypeScript
-- 22-locale i18n (English at root, `/es/`, `/fr/`, …)
-- Cloudflare Pages deployment with `functions/_middleware.js`
+- React 18 + TypeScript
+- Vite 6
+- React Router 7
+- Lenis smooth scroll
+- Cloudflare Workers SPA deploy (`wrangler.jsonc`)
 
-## Quick start
+## Development
 
 ```bash
 npm install
-npm run generate:i18n   # after editing scripts/i18n-data/*
-node scripts/generate-blog-posts.mjs
 npm run dev
 ```
 
-Build and validate sitemaps:
+## Build
 
 ```bash
-npm run build:validate
+npm run build
 ```
 
-## Deploy (Cloudflare Pages)
+Build generates `public/sitemap.xml`, copies assets to `dist/`, and pings IndexNow.
 
-1. Create a Cloudflare Pages project named **besttarkovcheats**
-2. Connect this repo or upload `dist/` after `npm run build`
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Add custom domain **tarkovcheats.org** (apex) and redirect **www** → apex
-6. Enable SSL **Always Use HTTPS**
+## Pages
 
-CLI deploy:
+- `/` — Homepage with features, FAQ, videos, SEO content
+- `/blog` — Blog index
+- `/blog/:slug` — Long-form articles
+- `/privacy` — Privacy policy
 
-```bash
-npm run pages:deploy
-```
+## SEO
 
-## Environment
-
-- Node.js >= 22.12.0
-- Checkout URL: Zadeyo Tarkov product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
-
-## License
-
-Private — for tarkovcheats.org deployment only.
+- Canonical domain: `https://tarkovhacks.net/`
+- Sitemap: `https://tarkovhacks.net/sitemap.xml`
+- Robots: `https://tarkovhacks.net/robots.txt`
