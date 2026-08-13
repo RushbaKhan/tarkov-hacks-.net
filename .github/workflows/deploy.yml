@@ -31,6 +31,23 @@ jobs:
       - name: Build and validate
         run: npm run build:validate
 
+      - name: Verify Cloudflare credentials
+        run: |
+          missing=0
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
+            echo "::error::Missing CLOUDFLARE_API_TOKEN. Add it in GitHub → Settings → Secrets → Actions."
+            missing=1
+          fi
+          if [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "::error::Missing CLOUDFLARE_ACCOUNT_ID. Add it in GitHub → Settings → Secrets → Actions."
+            missing=1
+          fi
+          if [ "$missing" -eq 1 ]; then
+            echo "Create token: https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+            echo "Use template: Edit Cloudflare Workers. Account ID is on the Cloudflare dashboard overview."
+            exit 1
+          fi
+
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
