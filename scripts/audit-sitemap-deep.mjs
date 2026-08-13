@@ -48,15 +48,10 @@ function htmlPathFor(urlPath) {
 }
 
 const REDIRECT_MAP = (() => {
-	const text = readFileSync(path.join(ROOT, 'public/_redirects'), 'utf8');
 	const map = new Map();
-	for (const line of text.split(/\r?\n/)) {
-		const t = line.trim();
-		if (!t || t.startsWith('#')) continue;
-		const parts = t.split(/\s+/);
-		if (parts.length < 3) continue;
-		const [from, to, status] = parts;
-		if (status === '301' || status === '302') map.set(from, to);
+	const workerRedirects = readFileSync(path.join(ROOT, 'src/redirects.ts'), 'utf8');
+	for (const row of workerRedirects.matchAll(/'([^']+)':\s*'([^']+)'/g)) {
+		if (row[1].startsWith('/') && row[2].startsWith('/')) map.set(row[1], row[2]);
 	}
 	try {
 		const json = JSON.parse(readFileSync(path.join(ROOT, 'functions/cannibal-redirects.json'), 'utf8'));

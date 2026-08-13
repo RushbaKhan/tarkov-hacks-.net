@@ -1,7 +1,11 @@
 /**
- * Cloudflare Worker — host canonicalization before static assets.
+ * Cloudflare Worker — host canonicalization and path redirects before static assets.
  * Canonical site: https://tarkovhacks.net (matches brand.url)
+ *
+ * Redirects live in src/redirects.ts (not public/_redirects — Workers assets cap at 100 rules).
  */
+import { isBrandStudioPath, resolvePathRedirect } from './redirects';
+
 export interface Env {
 	ASSETS: Fetcher;
 }
@@ -34,9 +38,23 @@ function canonicalUrl(request: Request): URL | null {
 
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
-		const target = canonicalUrl(request);
-		if (target) {
+		const canonical = canonicalUrl(request);
+		const url = canonical ?? new URL(request.url);
+
+		if (isBrandStudioPath(url.pathname)) {
+			const rewrite = new URL('/404.html', url.origin);
+			rewrite.search = url.search;
+			return env.ASSETS.fetch(new Request(rewrite.toString(), request));
+		}
+
+		const pathRedirect = resolvePathRedirect(url.pathname);
+		if (pathRedirect) {
+			const target = new URL(pathRedirect + url.search, url.origin);
 			return Response.redirect(target.toString(), 301);
+		}
+
+		if (canonical) {
+			return Response.redirect(url.toString(), 301);
 		}
 
 		return env.ASSETS.fetch(request);

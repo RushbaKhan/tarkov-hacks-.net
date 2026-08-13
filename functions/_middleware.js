@@ -26,7 +26,7 @@ const LEGACY_HOSTS = new Set([
 	'www.warzonescheats.xyz',
 ]);
 
-// Keep in sync with public/_redirects (which preserves query strings by default, as we do below).
+// Keep in sync with src/redirects.ts PATH_REDIRECTS (Worker handles redirects on deploy; no public/_redirects).
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
 	'/sitemap-index.xml': '/sitemap.xml',
