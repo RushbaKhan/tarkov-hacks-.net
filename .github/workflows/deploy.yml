@@ -31,6 +31,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Assert no _redirects in dist
+        run: |
+          test ! -f dist/_redirects || (echo "::error::dist/_redirects exists — abort deploy" && exit 1)
+          echo "dist/_redirects absent — safe to deploy"
+
       - name: Verify Cloudflare credentials
         run: |
           missing=0
