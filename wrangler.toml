@@ -1,0 +1,9 @@
+name = "tarkov-hacks-net"
+compatibility_date = "2026-01-01"
+main = "src/worker.ts"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = true
